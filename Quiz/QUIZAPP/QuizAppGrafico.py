@@ -24,7 +24,7 @@ ventana.config(bg="lightblue")
 def actualizar_fuentes(event):
     ancho = ventana.winfo_width()
     alto = ventana.winfo_height()
-    tamano_fuente = min(ancho, alto) // 30  # Ajusta el divisor según tus necesidades
+    tamano_fuente = min(ancho, alto) // 30
     fuente = tkFont.Font(family="Helvetica", size=tamano_fuente)
 
     for widget in ventana.winfo_children():
